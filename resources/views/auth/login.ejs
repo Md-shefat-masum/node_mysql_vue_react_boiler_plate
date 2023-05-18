@@ -1,0 +1,72 @@
+<%- include('../layouts/frontend/header.ejs') %>
+    <main>
+        <section>
+            <div class="limiter">
+                <div class="container-login100">
+                    <div class="wrap-login100">
+                        <form method="post" action="/login" class="login100-form validate-form">
+                            <span class="login100-form-title pb-4">
+                                Login to continue
+                            </span>
+                            <div>
+                                <div class="form-group">
+                                    <label class="">Email</label>
+                                    <input class="form-control" type="text" name="email"
+                                        value="<%= get_session_old(session,'email') %>">
+                                </div>
+                                <div class="text-danger">
+                                    <%- session_error(session, 'email' , '<br>' ) %>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group mt-3">
+                                    <label class="">Password</label>
+                                    <input class="form-control" type="password" name="password"
+                                        value="<%= get_session_old(session,'password') %>">
+                                </div>
+                                <div class="text-danger">
+                                    <%- session_error(session, 'password' , '<br>' ) %>
+                                </div>
+                            </div>
+
+                            <div class="d-flex my-3 justify-content-between">
+                                <div class="contact100-form-checkbox">
+                                    <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                                    <label class="label-checkbox100" for="ckb1">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <div>
+                                    <a href="#" class="txt1">
+                                        Forgot Password?
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="container-login100-form-btn">
+                                <button class="login100-form-btn">
+                                    Login
+                                </button>
+                            </div>
+                            <div class="text-center p-t-46 p-b-20">
+                                <span class="txt2">
+                                    or sign up using
+                                </span>
+                            </div>
+                            <div class="login100-form-social flex-c-m">
+                                <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+                                    <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </form>
+                        <div class="login100-more"
+                            style="background-image: url('/contents/frontend/images/login.jpg');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('../layouts/frontend/footer.ejs') %>

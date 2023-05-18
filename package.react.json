@@ -1,0 +1,60 @@
+{
+    "name": "node-express-complete-boilerplate",
+    "version": "1.0.0",
+    "description": "node-express-complete-boilerplate with nodejs, express, ejs, mongo, session, cockies, and more",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --mode=production --node-env=production",
+        "build:dev": "webpack --mode=development",
+        "build:prod": "webpack --mode=production --node-env=production",
+        "watch": "webpack --watch",
+        "server": "nodemon index.js --node-env=JS_FROM_SERVER",
+        "serve": "webpack serve --node-env=serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Md-shefat-masum/node-express-complete-boilerplate.git"
+    },
+    "keywords": [
+        "nodeJs-boilerplate",
+        "Express-js-boilerplate",
+        "express-rest-api"
+    ],
+    "author": "Md-shefat-masum",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Md-shefat-masum/node-express-complete-boilerplate/issues"
+    },
+    "homepage": "https://github.com/Md-shefat-masum/node-express-complete-boilerplate#readme",
+    "devDependencies": {
+        "@babel/core": "^7.21.4",
+        "@babel/preset-env": "^7.21.4",
+        "@babel/preset-react": "^7.18.6",
+        "autoprefixer": "^10.4.14",
+        "babel-loader": "^9.1.2",
+        "console-stamp": "^3.1.1",
+        "css-loader": "^6.7.3",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.7.5",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.22",
+        "postcss": "^8.4.21",
+        "postcss-loader": "^7.2.4",
+        "prettier": "^2.8.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sass": "^1.61.0",
+        "sass-loader": "^13.2.2",
+        "style-loader": "^3.3.2",
+        "webpack": "^5.80.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-middleware": "^6.0.2",
+        "webpack-dev-server": "^4.13.2",
+        "webpack-hot-middleware": "^2.25.3",
+        "workbox-webpack-plugin": "^6.5.4"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2"
+    }
+}
